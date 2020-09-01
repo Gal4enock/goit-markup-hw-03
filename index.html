@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
     
 </head>
@@ -12,6 +13,7 @@
     <body>
         <!-- Шапка сайта-->
         <header>
+            <div class="container">
             <nav >
             <a href="./index.html" class="logo"> <span class="logo-word">Web</span> Studio</a>
             <ul class="site-nav">
@@ -29,6 +31,7 @@
                 </li> 
             </ul>
             </address>
+        </div>
         </header>  
     <main>      
         <!--Герой-->
@@ -40,38 +43,40 @@
         </div> 
         <!--Преимущества-->
         <section class="section">
-                <h2 class="section-title">Наши преимущества</h2>
-                <ul>
+            <div class="container">
+                <h2 class="section-title visually-hidden">Наши преимущества</h2>
+                <ul class="list-details">
                     <li>
-                        <h3 class="item-title">Внимание к деталям</h3>
+                        <p class="item-title">Внимание к деталям</p>
                         <p class="item-details">
                             Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li>
                     <li>
-                        <h3 class="item-title">Пунктуальность</h3>
+                        <p class="item-title">Пунктуальность</p>
                         <p class="item-details">
                             Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                         </p>
                     </li>
                     <li>
-                        <h3 class="item-title"> Планирование</h3>
+                        <p class="item-title"> Планирование</p>
                         <p class="item-details">
                             Равным образом консультация с широким активом в значительной степени обуславливает.
                         </p>
                     </li>
                     <li>
-                        <h3 class="item-title">Современные технологии</h3>
+                        <p class="item-title">Современные технологии</p>
                         <p class="item-details">
                             Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                         </p>
                     </li>
-                </ul>     
+                </ul> 
+            </div>    
         </section>  
         <!--Чем мы занимаемся-->
         <section class="section">
                 <h2 class="section-title">Чем мы занимаемся</h2>
-                <ul>
+                <ul class="section-todo-list">
                     <li>
                         <img src="./img/comp.jpg" alt="ноутбук" width="370" height="294" >
                         </li>
@@ -86,7 +91,7 @@
         <!--Наша команда-->
         <section class="section">
             <h2 class="section-title">Наша команда</h2>
-            <ul>
+            <ul class=" section-team-list">
                 <!--Игорь Демьяненко-->
                 <li>
                     <img src="./img/igor.jpg" alt="Фото Игоря" width="270" height="260">
