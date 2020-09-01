@@ -226,3 +226,18 @@ margin-bottom: 10px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.button-list {
+    margin-top: 94px;
+}
+.exampel-list {
+    margin-top: 56px;
+}
+.example-type {
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+.example-title {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
