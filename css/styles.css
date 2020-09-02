@@ -12,11 +12,15 @@
 /* Цвет наведения и акцент #2196F3*/
 /* Цвет в футере rgba(255, 255, 255, 0.6)*/
 /* Цвет фона вторичный #F5F4FA*/
+html {
+    box-sizing: border-box;
+}
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: inherit;
 }
+
 body {
     margin: 0;
     background-color: #FFFFFF;
@@ -46,7 +50,7 @@ a:hover,
 a:focus {
     color: var(--accent-color);
 }
-a {
+a, .exampel-list a {
     color:var(--title-text-color);
     text-decoration: none;
 }
@@ -97,8 +101,19 @@ button:hover, button:focus {
     color: var(--other-color);
     background-color: var(--accent-color);
 }
+
 .site-nav .link.current {
+   
     color: var(--accent-color);
+}
+.site-nav li {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 50px;
+}
+.site-nav li:last-child {
+    margin-right: 0;
 }
 /*стиль секций*/
 /*секция герой*/
@@ -107,7 +122,14 @@ button:hover, button:focus {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-}
+     }
+     .hero-title-button {
+         display: block;
+         width: 696px;
+         text-align: center;
+         margin-left: auto;
+         margin-right: auto;
+     }
 .hero-title {
     color: var(--other-color);
     text-transform: uppercase;
@@ -119,6 +141,7 @@ button:hover, button:focus {
     letter-spacing: 0.06em;
     margin-top: 0;
     margin-bottom: 30px;
+
 }
 /* стиль оглавлений секций*/
 .section-title, .item-title, .name{
@@ -140,7 +163,6 @@ button:hover, button:focus {
 .item-title {
 font-weight: 700;
 }
-
 h3 {
     font-weight: 700;
     font-size: 14px;
@@ -196,7 +218,10 @@ footer {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--other-color);
+    color: var(--other-color);  
+}
+address {
+    font-style: normal
 }
 .container {
     width: 1200px;
@@ -204,20 +229,32 @@ footer {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    outline: 2px solid tomato; 
 }
 /* позиционирование Преимуществ */
-.list-details {
-    margin-top: 94px;
+.item-title, .section-title {
+   
+    padding-top: 94px;
 }
 .item-title {
 margin-bottom: 10px;
 }
 .list-details p {
     margin-top: 0;
+    text-align: left;
+    }
+.list-details {
+    display: flex;
+    min-height: 101px;
+    justify-content: space-between;
+}
+.list-details li {
+    width: 270px;
 }
 /* позиционирование Чем мы занимаемся */
 .section-todo-list, .section-team-list {
     margin-top: 50px;
+    padding-bottom: 94px;
 }
 .profession-name {
     margin-top: 10px;
@@ -225,8 +262,7 @@ margin-bottom: 10px;
 .footer-section {
     padding-top: 60px;
     padding-bottom: 60px;
-}
-
+   }
 .button-list {
     margin-top: 94px;
 }
@@ -240,4 +276,44 @@ margin-bottom: 10px;
 .example-title {
     margin-top: 20px;
     margin-bottom: 0;
+}
+.section-todo-list {
+    display: flex;
+   justify-content: space-between;
+}
+/* Расположение шапки */
+.site-nav, nav, .site-address, .address-section {
+    display: flex;   
+}
+nav {
+    justify-content: flex-start;
+    align-items: center;   
+}
+.address-section{
+    justify-content: flex-end;
+} 
+.header {
+    align-items: center;
+}
+.logo {
+    margin-right: 93px;
+}
+.site-address-item:not(:last-child) {
+    margin-right: 50px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Позиционирование Наша Команда */
+.section-team-list {
+    display: flex;
+    
+    }
+.section-team-list li {
+    text-align: center;
+}
+.name {
+    margin-top: 30px;
 }
