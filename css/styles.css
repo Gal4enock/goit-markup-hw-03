@@ -202,6 +202,8 @@ footer {
 .logo-footer {
     color: var(--other-color);
     font-family: 'Raleway', sans-serif;
+    padding-top: 60px;
+    margin-top: 0;
     }
 .post-adres {
     font-size: 14px;
@@ -316,4 +318,28 @@ nav {
 }
 .name {
     margin-top: 30px;
+}
+/* Позиционирование страницы Портфолио */
+.button-list {
+    display: flex;
+    padding-top: 94px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.button-list li:not(:last-child) {
+    margin-right: 4px;
+}
+.exampel-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.exampel-list > li:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+.exampel-list > li:not(:nth-child(-n + 3)) {
+    margin-bottom: 30px;
+}
+.example-section {
+    margin-bottom: 0;
 }
