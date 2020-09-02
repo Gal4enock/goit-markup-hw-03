@@ -260,9 +260,10 @@ margin-bottom: 10px;
 .profession-name {
     margin-top: 10px;
 }
-.footer-section {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    width: 270px;
    }
 .button-list {
     margin-top: 94px;
@@ -276,11 +277,16 @@ margin-bottom: 10px;
 }
 .example-title {
     margin-top: 20px;
-    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .section-todo-list {
     display: flex;
-   justify-content: space-between;
+}
+.section-todo-list li {
+    width: 370px;
+}
+.section-todo-list li:not(:last-child) {
+    margin-right: 30px;
 }
 /* Расположение шапки */
 .site-nav, nav, .site-address, .address-section {
@@ -310,14 +316,17 @@ nav {
 /* Позиционирование Наша Команда */
 .section-team-list {
     display: flex;
-    
-    }
+}
 .section-team-list li {
-    text-align: center;
+    width: 270px;
+}
+.section-team-list li:not(:last-child) {
+    margin-right: 30px;
 }
 .name {
     margin-top: 30px;
 }
+
 /* Позиционирование страницы Портфолио */
 .button-list {
     display: flex;
