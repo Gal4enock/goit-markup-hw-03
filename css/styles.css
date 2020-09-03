@@ -151,6 +151,10 @@ button:hover, button:focus {
     text-align: center;
     margin-top: 0;
 }
+.section-title {
+    font-size: 36px;
+    line-height: 1.22;
+}
 .visually-hidden {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -236,7 +240,6 @@ address {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid tomato; 
 }
 /* позиционирование Преимуществ */
 .advant, .todo, .team {
@@ -272,7 +275,10 @@ margin-bottom: 10px;
     width: 270px;
    }
 .button-list {
-    margin-top: 94px;
+    margin-top: 94px;  
+}
+.button {
+    font-weight: 500;
 }
 .exampel-list {
     margin-top: 56px;
@@ -280,10 +286,6 @@ margin-bottom: 10px;
 .example-type {
     margin-top: 4px;
     margin-bottom: 0;
-}
-.example-title {
-    margin-top: 20px;
-    padding-bottom: 0;
 }
 .section-todo-list {
     display: flex;
@@ -337,13 +339,14 @@ header {
 .section-team-list li:not(:last-child) {
     margin-right: 30px;
 }
-.name {
-    margin-top: 30px;
+.team-detail {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 /* Позиционирование страницы Портфолио */
 .button-list {
-    display: flex;
-    
+    display: flex;   
     margin-top: 0;
     margin-bottom: 50px;
     justify-content: center;
@@ -366,6 +369,7 @@ header {
 }
 .card-description {
     border: 1px solid #EEEEEE;
+    padding: 20px 24px;
 }
 .example {
     margin-bottom: 0;
