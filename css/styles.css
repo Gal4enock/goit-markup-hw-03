@@ -83,6 +83,7 @@ button {
     min-width: 73px;
     border: 1px solid transparent;
     cursor: pointer;
+    font-weight: 500;
 }
 .button-hero {
     font-weight: 700;
@@ -149,6 +150,7 @@ button:hover, button:focus {
 .section-title {
     font-size: 36px;
     line-height: 1.22;
+    margin-bottom: 50px;
 }
 .visually-hidden {
     position: absolute !important;
@@ -196,12 +198,15 @@ h3 {
     font-size: 16px;
     line-height: 1.87;
     color: var(--primery-text-color);
+    font-weight: 400;
 }
 /* стиль футера*/
 footer {
     background-color: var(--footer-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
     }
-.footer li:not(:last-child) {
+.footer-item li:not(:last-child) {
     margin-bottom: 9px;
 }
 .logo-footer {
@@ -259,15 +264,12 @@ margin-bottom: 10px;
     width: 270px;
 }
 /* позиционирование Чем мы занимаемся */
-.section-todo-list, .section-team-list {
-    margin-top: 50px;
-}
 .profession-name {
     margin-top: 10px;
 }
-.footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.footer-item {
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
     width: 270px;
    }
 .button-list {
@@ -368,7 +370,6 @@ header {
     padding: 20px 24px;
 }
 .example {
-    margin-bottom: 0;
     padding-top: 94px;
     padding-bottom: 94px;
 }
