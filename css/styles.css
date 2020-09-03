@@ -201,11 +201,14 @@ h3 {
 footer {
     background-color: var(--footer-background);
     }
+.footer li:not(:last-child) {
+    margin-bottom: 9px;
+}
 .logo-footer {
     color: var(--other-color);
     font-family: 'Raleway', sans-serif;
-    padding-top: 60px;
     margin-top: 0;
+    margin-bottom: 20px;
     }
 .post-adres {
     font-size: 14px;
